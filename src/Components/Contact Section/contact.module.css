@@ -1,0 +1,156 @@
+.header {
+  font-size: 40px;
+  background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  width: auto;
+  margin-top: 20px;
+}
+
+.miniContainer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemsContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  grid-template-rows: repeat(6, 40px);
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imagecontact {
+  width: 30px;
+  color: white;
+}
+
+.p {
+  color: white;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+  height: 80px;
+  padding: 20px;
+}
+
+.contactContainer:hover {
+  background-color: #17e8eb;
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.animatedLogo {
+  width: 200px;
+}
+
+.formdiv {
+  background-color: #17e8eb;
+  height: 430px;
+  padding: 10px;
+  width: 340px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input {
+  width: 300px;
+  margin: 10px;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: black;
+}
+
+.textArea {
+  overflow: hidden;
+  margin: 10px;
+  width: 300px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  background-color: black;
+  height: 130px;
+}
+
+.btn {
+  width: 300px;
+  color: #17e8eb;
+  background-color: black;
+  border-radius: 3px;
+  height: 40px;
+}
+
+@media (max-width: 690px) {
+  .miniContainer {
+    display: block;
+  }
+
+  .formdiv {
+    margin-bottom: 22px;
+  }
+
+  .itemsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(6, 40px);
+  }
+
+  .input {
+    width: 90%;
+    margin: 10px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+  }
+
+  .textArea {
+    overflow: hidden;
+    margin: 10px;
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: black;
+    height: 130px;
+  }
+
+  .btn {
+    width: 90%;
+    color: #17e8eb;
+    background-color: black;
+    border-radius: 3px;
+    height: 40px;
+  }
+
+  .formdiv {
+    background-color: #17e8eb;
+    height: 430px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* .contactContainer{
+    justify-content: center;
+  } */
+}

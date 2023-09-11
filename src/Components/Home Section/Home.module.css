@@ -1,0 +1,124 @@
+.boxcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  height: 200px;
+  border-radius: 0px;
+  margin-top: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 100%;
+}
+
+.myname {
+  background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hr {
+  background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 70%;
+  margin: auto;
+}
+
+.title {
+  font-size: 50px;
+  background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  margin: auto;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #17e8eb;
+  font-weight: 900;
+}
+
+.descriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#avtar {
+  width: 200px;
+  height: 200px;
+  position: initial;
+  border-radius: 50%;
+}
+
+.avtarcontainer {
+  height: 950px;
+  color: white;
+  padding-top: 150px;
+}
+
+@media (max-width: 935px) {
+  .description {
+    top: 800px;
+  }
+}
+
+@media (max-width: 655px) {
+  .description {
+    top: 815px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 475px) {
+  .description {
+    top: 735px;
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 371px) {
+  .description {
+    top: 700px;
+    font-size: 35px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  #avtar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 275px) {
+  .description {
+    top: 680px;
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  #avtar {
+    width: 150px;
+    height: 150px;
+  }
+}
