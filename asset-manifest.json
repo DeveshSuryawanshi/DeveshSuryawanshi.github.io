@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.a4d744c0.css",
-    "main.js": "/static/js/main.d03c232a.js",
+    "main.js": "/static/js/main.e7dd3b6b.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/myImage.jpeg": "/static/media/myImage.af8bd9bfa3946aa56ff0.jpeg",
+    "static/media/fitness-project.png": "/static/media/fitness-project.d387f0036abbb44ccc02.png",
+    "static/media/Recipe-Swap.png": "/static/media/Recipe-Swap.18d30524b9852af51286.png",
     "static/media/ContactLogo.png": "/static/media/ContactLogo.0586c5d023594f1e6fe7.png",
     "static/media/3DModel.png": "/static/media/3DModel.d08f1d9ed36dc4740fa7.png",
     "static/media/Devesh-Suryawanshi-Resume.pdf": "/static/media/Devesh-Suryawanshi-Resume.59a3fcc16cf6cc55d804.pdf",
@@ -17,11 +19,11 @@
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
     "main.a4d744c0.css.map": "/static/css/main.a4d744c0.css.map",
-    "main.d03c232a.js.map": "/static/js/main.d03c232a.js.map",
+    "main.e7dd3b6b.js.map": "/static/js/main.e7dd3b6b.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4d744c0.css",
-    "static/js/main.d03c232a.js"
+    "static/js/main.e7dd3b6b.js"
   ]
 }
