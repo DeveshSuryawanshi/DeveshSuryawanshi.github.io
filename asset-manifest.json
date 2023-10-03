@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.5acbb19b.css",
-    "main.js": "/static/js/main.befb7237.js",
+    "main.css": "/static/css/main.4b543b14.css",
+    "main.js": "/static/js/main.79ee198a.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/myImage.jpeg": "/static/media/myImage.af8bd9bfa3946aa56ff0.jpeg",
     "static/media/ContactLogo.png": "/static/media/ContactLogo.0586c5d023594f1e6fe7.png",
     "static/media/3DModel.png": "/static/media/3DModel.d08f1d9ed36dc4740fa7.png",
+    "static/media/Devesh-Suryawanshi-Resume.pdf": "/static/media/Devesh-Suryawanshi-Resume.59a3fcc16cf6cc55d804.pdf",
     "static/media/linkdin.png": "/static/media/linkdin.656e19e3773750063a15.png",
     "static/media/phone.png": "/static/media/phone.e33c13e2e8ac44d38681.png",
     "static/media/redux.png": "/static/media/redux.b426d97de12d4dab1c06.png",
@@ -15,12 +16,12 @@
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
-    "main.5acbb19b.css.map": "/static/css/main.5acbb19b.css.map",
-    "main.befb7237.js.map": "/static/js/main.befb7237.js.map",
+    "main.4b543b14.css.map": "/static/css/main.4b543b14.css.map",
+    "main.79ee198a.js.map": "/static/js/main.79ee198a.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5acbb19b.css",
-    "static/js/main.befb7237.js"
+    "static/css/main.4b543b14.css",
+    "static/js/main.79ee198a.js"
   ]
 }
