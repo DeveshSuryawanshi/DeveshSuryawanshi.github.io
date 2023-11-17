@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.50536f39.css",
-    "main.js": "/static/js/main.d14ffb3f.js",
+    "main.js": "/static/js/main.f593ea59.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
     "static/media/Saregama.png": "/static/media/Saregama.4d54edaf08d3d99a72bc.png",
@@ -22,11 +22,11 @@
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
     "main.50536f39.css.map": "/static/css/main.50536f39.css.map",
-    "main.d14ffb3f.js.map": "/static/js/main.d14ffb3f.js.map",
+    "main.f593ea59.js.map": "/static/js/main.f593ea59.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50536f39.css",
-    "static/js/main.d14ffb3f.js"
+    "static/js/main.f593ea59.js"
   ]
 }
