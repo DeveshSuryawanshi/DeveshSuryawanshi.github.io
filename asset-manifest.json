@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5190d0fb.css",
-    "main.js": "/static/js/main.7d18a914.js",
+    "main.css": "/static/css/main.211fb83a.css",
+    "main.js": "/static/js/main.c92771e5.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
     "static/media/Saregama.png": "/static/media/Saregama.4d54edaf08d3d99a72bc.png",
@@ -16,6 +16,7 @@
     "static/media/phone.png": "/static/media/phone.e33c13e2e8ac44d38681.png",
     "static/media/redux.png": "/static/media/redux.b426d97de12d4dab1c06.png",
     "static/media/insta.png": "/static/media/insta.459d14acdbfb7db227e0.png",
+    "static/media/Express.png": "/static/media/Express.04e4743fbd704db71ed7.png",
     "static/media/nodejs.png": "/static/media/nodejs.07d152a8a036951b8d14.png",
     "static/media/CSS Logo.png": "/static/media/CSS Logo.495a79bfbc4ced7c7c0e.png",
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
@@ -23,12 +24,12 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.5190d0fb.css.map": "/static/css/main.5190d0fb.css.map",
-    "main.7d18a914.js.map": "/static/js/main.7d18a914.js.map",
+    "main.211fb83a.css.map": "/static/css/main.211fb83a.css.map",
+    "main.c92771e5.js.map": "/static/js/main.c92771e5.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5190d0fb.css",
-    "static/js/main.7d18a914.js"
+    "static/css/main.211fb83a.css",
+    "static/js/main.c92771e5.js"
   ]
 }
