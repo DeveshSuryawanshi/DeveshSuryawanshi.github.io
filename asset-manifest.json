@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5bb5530.css",
-    "main.js": "/static/js/main.ec91b8b2.js",
+    "main.css": "/static/css/main.85df1105.css",
+    "main.js": "/static/js/main.ace45962.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
     "static/media/Saregama.png": "/static/media/Saregama.4d54edaf08d3d99a72bc.png",
@@ -24,6 +24,7 @@
     "static/media/phone.png": "/static/media/phone.e33c13e2e8ac44d38681.png",
     "static/media/redux.png": "/static/media/redux.b426d97de12d4dab1c06.png",
     "static/media/insta.png": "/static/media/insta.459d14acdbfb7db227e0.png",
+    "static/media/canva.webp": "/static/media/canva.8a168fb0442e2ce28ae1.webp",
     "static/media/git.png": "/static/media/git.dfdd0989ffe0184bdd68.png",
     "static/media/nodejs.png": "/static/media/nodejs.07d152a8a036951b8d14.png",
     "static/media/Premierpro.png": "/static/media/Premierpro.3a0824fc7814d482a19c.png",
@@ -34,12 +35,12 @@
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.d5bb5530.css.map": "/static/css/main.d5bb5530.css.map",
-    "main.ec91b8b2.js.map": "/static/js/main.ec91b8b2.js.map",
+    "main.85df1105.css.map": "/static/css/main.85df1105.css.map",
+    "main.ace45962.js.map": "/static/js/main.ace45962.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5bb5530.css",
-    "static/js/main.ec91b8b2.js"
+    "static/css/main.85df1105.css",
+    "static/js/main.ace45962.js"
   ]
 }
