@@ -1,15 +1,39 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styles from "./Nav1.module.css";
+import resume from "../../Resume/Devesh-Suryawanshi-Resume.pdf";
+import { useState } from "react";
+import { useEffect } from "react";
+import { ThemMode } from "../../Them Section/ThemMode";
+import { SiGamedeveloper } from "react-icons/si";
 
 function Navlarge() {
+
+  const handleResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1Xky2XiA3FXerRDI0vuZ-VRo9oFWpR9nJ/view?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
     <div id="nav-menu" className={styles.containermain}>
       <header className={styles.container}>
         <div>
-          <h2 id="user-detail-name" className={styles.name}>DEVESH SURYAWANSHI</h2>
+        <Link to={"home"}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="nav-link home"
+              >
+          <h2 id="user-detail-name" className={styles.name}>
+            <p>DEVESH SURYAWANSHI</p>
+            <SiGamedeveloper/>
+          </h2>
+        </Link>
         </div>
         <ul className={styles.ul}>
+          {/* <ThemMode/> */}
           <li className={styles.li}>
             <Link
               id={styles.link}
@@ -61,6 +85,30 @@ function Navlarge() {
           <li className={styles.li}>
             <Link
               id={styles.link}
+              to={"education"}
+              smooth={true}
+              offset={-90}
+              duration={500}
+              className="nav-link contact"
+            >
+              Education
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link
+              id={styles.link}
+              to={"github"}
+              smooth={true}
+              offset={-90}
+              duration={500}
+              className="nav-link contact"
+            >
+              Github
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link
+              id={styles.link}
               to={"contact"}
               smooth={true}
               offset={-90}
@@ -70,9 +118,15 @@ function Navlarge() {
               Contact
             </Link>
           </li>
-          <li className={styles.li}>
-            <a class="nav-link resume" id={styles.a} href="file:///D:/Devesh-Suryawanshi-Resume.pdf">
-              Resume
+          <li class="nav-link resume">
+            <a
+              id="resume-link-1"
+              onClick={handleResume}
+              href={resume}
+              target="_blank"
+              download="Devesh-Suryawanshi-Resume"
+            >
+              <button className={styles.a} id="resume-button-1">Resume</button>
             </a>
           </li>
         </ul>

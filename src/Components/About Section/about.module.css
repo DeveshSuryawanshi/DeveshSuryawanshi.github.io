@@ -1,15 +1,21 @@
+.AboutContainer{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .header {
   font-size: 40px;
   background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .contentContainer {
@@ -21,6 +27,18 @@
   align-items: center;
   border-radius: 20px;
   padding: 20px;
+  /* border: solid #17e8eb 1px; */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border:1px solid rgba(255, 255, 255, 0.18); */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.introResumebutton{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .self {
@@ -32,13 +50,32 @@
 
 .pera {
   padding: 20px;
-  /* color: #17e8eb; */
+  text-align: start;
   word-spacing: 2px;
-  font-size: 18px;
-  font-weight: 500;
-  background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 1;
+  color: white;
+}
+
+.a {
+  background-color: white;
+  padding: 5px 15px;
+  font-weight: 900;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.resumebtn2{
+  background-color: white;
+  padding: 5px 15px;
+  font-weight: 900;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+  margin: 20px;
 }
 
 .image {

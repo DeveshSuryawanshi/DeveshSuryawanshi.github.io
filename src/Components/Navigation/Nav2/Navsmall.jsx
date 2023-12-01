@@ -15,6 +15,7 @@ import { useRef } from "react";
 import style from "./Navsmall.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
+import { SiGamedeveloper } from "react-icons/si";
 
 function Navsmall() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,7 +23,18 @@ function Navsmall() {
   return (
     <Box className={style.container1}>
       <Box>
-        <h2 className={style.name}>DEVESH SURYAWANSHI</h2>
+        <Link
+          to={"home"}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="nav-link home"
+        >
+          <h2 className={style.name}>
+            <p>DEVESH SURYAWANSHI</p>
+            <SiGamedeveloper />
+          </h2>
+        </Link>
       </Box>
       <Box className={style.menu}>
         <GiHamburgerMenu
@@ -39,9 +51,14 @@ function Navsmall() {
           className={style.background}
         >
           <DrawerOverlay />
-          <DrawerContent backdropFilter='auto' backdropBlur='8px' bg={"#0005"} mt={"65px"}>
+          <DrawerContent
+            backdropFilter="auto"
+            backdropBlur="8px"
+            bg={"#0005"}
+            mt={"65px"}
+          >
             <DrawerCloseButton color={"#17e8eb"} />
-            <DrawerHeader color={"#17e8eb"}>MENU</DrawerHeader> 
+            <DrawerHeader color={"#17e8eb"}>MENU</DrawerHeader>
             <Box className={style.contrainer2}>
               <Box className={style.mini1}>
                 <div>
@@ -54,17 +71,19 @@ function Navsmall() {
                           smooth={true}
                           offset={-90}
                           duration={500}
+                          onClick={onClose}
                         >
                           Home
                         </Link>
                       </li>
-                      <li className={style.li }>
+                      <li className={style.li}>
                         <Link
                           className={style.link}
                           to={"about"}
                           smooth={true}
                           offset={-90}
                           duration={500}
+                          onClick={onClose}
                         >
                           About
                         </Link>
@@ -76,6 +95,7 @@ function Navsmall() {
                           smooth={true}
                           offset={-90}
                           duration={500}
+                          onClick={onClose}
                         >
                           Skills
                         </Link>
@@ -87,8 +107,33 @@ function Navsmall() {
                           smooth={true}
                           offset={-90}
                           duration={500}
+                          onClick={onClose}
                         >
                           Projects
+                        </Link>
+                      </li>
+                      <li className={style.li}>
+                        <Link
+                          className={style.link}
+                          to={"education"}
+                          smooth={true}
+                          offset={-90}
+                          duration={500}
+                          onClick={onClose}
+                        >
+                          Education
+                        </Link>
+                      </li>
+                      <li className={style.li}>
+                        <Link
+                          className={style.link}
+                          to={"github"}
+                          smooth={true}
+                          offset={-90}
+                          duration={500}
+                          onClick={onClose}
+                        >
+                          Github
                         </Link>
                       </li>
                       <li className={style.li}>
@@ -98,6 +143,7 @@ function Navsmall() {
                           smooth={true}
                           offset={-90}
                           duration={500}
+                          onClick={onClose}
                         >
                           Contact
                         </Link>

@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
+
+.avtarcontainer {
+  color: white;
+}
+
+.contentContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HeroBg{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+  @media (max-width: 550px) {
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 120px;
+  }
+  
+  @media (max-width: 430px){
+    padding: 0 10px;
+    margin-top: 200px;
+  }
+  
+  @media (max-width: 380px){
+    padding: 0 0px;
+    margin-top: 200px;
+  }
+
+}
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .boxcontainer {
   display: flex;
   justify-content: center;
@@ -10,10 +56,14 @@
   color: black;
   display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border:1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   width: 100%;
 }
@@ -44,7 +94,7 @@
   font-size: 50px;
   letter-spacing: 3px;
   color: #17e8eb;
-  font-weight: 900;
+  font-family: Monoton;
 }
 
 .descriptionContainer {
@@ -54,18 +104,91 @@
   text-align: center;
 }
 
-#avtar {
+.avtarContainer{
+  position: relative;
   width: 200px;
   height: 200px;
-  position: initial;
   border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.37);
+  overflow: hidden;
+  margin-top: 200px;
 }
 
-.avtarcontainer {
-  height: 950px;
-  color: white;
-  padding-top: 150px;
+.avtarContainer::before{
+  content: "";
+  position: absolute;
+  inset: -10px 60px;
+  background: linear-gradient(315deg,#00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
 }
+
+.avtarContainer:hover::before{
+  inset: -20px 0px;
+} 
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.avtarContainer::after{
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #191924;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.content{
+  position: absolute;
+  inset: 15px;
+  border: 3px solid rgba(0, 0, 0, 0.37);
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content #avtar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.avtarContainer:hover .content #avtar{
+  opacity: 0;
+}
+
+.content h2{
+  position: relative;
+  /* font-size: 1.5em; */
+  text-align: center;
+  color: #ffff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.content h2 span{
+font-weight: 300;
+font-size: 0.75em;
+}
+
 
 @media (max-width: 935px) {
   .description {

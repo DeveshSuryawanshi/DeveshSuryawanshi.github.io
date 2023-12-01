@@ -8,9 +8,10 @@ import Contact from "../Contact Section/Contact";
 import Skills from "../Skills Section/Skills";
 import Projects from "../Projects Section/Projects";
 import Github from "../Githubinfo/Github";
+import { Education } from "../Education/Education";
 
 function Navigation() {
-  const [midScreenSize] = useMediaQuery("(min-width: 935px)");
+  const [midScreenSize] = useMediaQuery("(min-width: 1000px)");
 
   return (
     <div>
@@ -18,34 +19,25 @@ function Navigation() {
 
       <main>
         <div>
-          <div id="home">
-            <Home />
-          </div>
+          <Home />
         </div>
         <div>
-          <div id="about">
-            <About />
-          </div>
+          <About />
         </div>
         <div>
-          <div id="skills">
-            <Skills />
-          </div>
+          <Skills />
         </div>
         <div>
-          <div id="projects">
-            <Projects/>
-          </div>
+          <Projects />
         </div>
         <div>
-          <div id="github">
-            <Github />
-          </div>
+          <Education/>  
         </div>
         <div>
-          <div id="contact">
-            <Contact />
-          </div>
+          <Github />
+        </div>
+        <div>
+          <Contact />
         </div>
       </main>
     </div>

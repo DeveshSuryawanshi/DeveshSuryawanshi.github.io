@@ -1,50 +1,36 @@
 import style from "./skills.module.css";
-import html from "./logos/html-5.png";
-import css from "./logos/CSS Logo.png";
-import javascript from "./logos/javascript logo.png";
-import react from "./logos/logo512.png";
-import redux from "./logos/redux.png";
-import node from "./logos/nodejs.png";
+import { Stack } from "../../AppData/data";
+
 
 function Skills() {
   return (
-    <section id="skills" style={{ height: "1000px", color: "white" }}>
+    <section id="skills" className={style.skills}>
       <h1 className={style.header}>Skills</h1>
+      <div className={style.desc}>Here are some of my skills on which I have been working on for the past 1 year.</div>
       <div className={style.maincontainer}>
-
-        <div class="skills-card" id={style.miniContainer}>
-          <img class="skills-card-img" src={html} id={style.images} alt="error" />
-          <p class="skills-card-name" id={style.p}>HTML5</p>
-        </div>
-
-        <div class="skills-card" id={style.miniContainer}>
-          <img class="skills-card-img" src={css} id={style.images} alt="error" />
-          <p class="skills-card-name" id={style.p}>CSS3</p>
-        </div>
-
-        <div class="skills-card" id={style.miniContainer}>
-          <img class="skills-card-img" src={javascript} id={style.images} alt="error" />
-          <p class="skills-card-name" id={style.p}>JavaScript</p>
-        </div>
-
-        <div class="skills-card" id={style.miniContainer}>
-          <img class="skills-card-img" src={react} id={style.images} alt="error" />
-          <p class="skills-card-name" id={style.p}>React</p>
-        </div>
-
-        <div class="skills-card" id={style.miniContainer}>
-          <img class="skills-card-img" src={redux} id={style.images} alt="error" />
-          <p class="skills-card-name" id={style.p}>Redux</p>
-        </div>
-
-        <div class="skills-card" id={style.miniContainer}>
-          <img class="skills-card-img" src={node} id={style.images} alt="error" />
-          <p class="skills-card-name" id={style.p}>Node.Js</p>
-        </div>
-
+        {Stack.map((el, i) => {
+          return (
+            <div class="skills-card" key={i} id={style.miniContainer}>
+              <div className={style.skillTitle}>{el.title}</div>
+              <div className={style.skillsList}>
+                {
+                  el.skills.map((el,i)=>{
+                    return(
+                      <div key={i} className={style.skillItem}>
+                        <img src={el.image} class="skills-card-img" id={style.icon} alt="error" />
+                        <p class="skills-card-name" id={style.SkillName}>{el.name}</p>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
 }
 
 export default Skills;
+

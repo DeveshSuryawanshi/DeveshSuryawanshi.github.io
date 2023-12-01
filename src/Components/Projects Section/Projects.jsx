@@ -1,54 +1,71 @@
 import styled from "styled-components";
+import ProjectCard from "./ProjectCard";
+import { projects } from "../../AppData/data";
+import { useState } from "react";
 
 function Projects() {
+
+  const [isActive, SetActive] = useState("all");
+
   return (
     <SECTION id="projects">
-      <div className="box">
-        <h1>Projects</h1>
-        <div className="b1"></div>
+      <Wrapper>
+        <Title>Projects</Title>
+        <Desc>Here are some of my projects <br/> "Crafting Tomorrow's Success Stories: A Showcase of Passion, Precision, and Progress in Every Project."</Desc>
+        <ToogleGroup>
+          {
+            isActive === "all" ? (
+              <ToogleButton active value={"all"} onClick={()=> SetActive("all")} >All</ToogleButton>
+              ) : (
+              <ToogleButton value={"all"} onClick={()=> SetActive("all")}>All</ToogleButton>
+            )
+          }
 
-        <div className="b2">
-          <div className="c"></div>
-          <div className="c"></div>
-          <div className="c2"></div>
-          <div className="c3"></div>
-          <div className="c"></div>
-          <div className="c"></div>
-        </div>
-        <div className="b3">
-          <div className="c"></div>
-          <div className="c"></div>
-          <div className="c4"></div>
-          <div className="c"></div>
-          <div className="c"></div>
-          <div className="c5"></div>
-          <div className="c"></div>
-          <div className="c"></div>
-        </div>
-        <div className="b4">
-          <div className="c1"></div>
-          <div className="c1"></div>
-          <div className="c6"></div>
-          <div className="c1"></div>
-          <div className="c1"></div>
-          <div className="c7"></div>
-          <div className="c1"></div>
-          <div className="c1"></div>
-          <div className="c1"></div>
-        </div>
-        <div>
-          <div className="cont">
-            <h2>Welcome to the Projects Section </h2>
-            <div className="animated2">
-              <div className="line">React</div>
-              <div className="line">HTML</div>
-              <div className="line">CSS</div>
-              <div className="line">JavaScript</div>
-              <div className="line">Redux</div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <Divider/>
+
+          {
+            isActive === "web-app" ? (
+              <ToogleButton active onClick={()=> SetActive("web-app")}>WEB APP'S</ToogleButton>
+            ):(
+              <ToogleButton onClick={()=> SetActive("web-app")}>WEB APP'S</ToogleButton>
+            )
+          }
+
+          <Divider/>
+
+          {
+            isActive === "android-app" ? (
+              <ToogleButton active onClick={()=> SetActive("android-app")} >ANDROID APP'S</ToogleButton>
+              ):(
+              <ToogleButton onClick={()=> SetActive("android-app")} >ANDROID APP'S</ToogleButton>
+            )
+          }
+
+          {/* <Divider/>
+
+          {
+            isActive === "machine-learning" ? (
+              <ToogleButton active onClick={()=> SetActive("machine-learning")}>MACHINE LEARNING</ToogleButton>
+              ):(
+                <ToogleButton onClick={()=> SetActive("machine-learning")}>MACHINE LEARNING</ToogleButton>
+            )
+          } */}
+        </ToogleGroup>
+        <CardContainer>
+          {isActive === "all" &&
+            projects.map((el,i) =>{
+              return <ProjectCard key={i} {...el}/>
+            })
+          }
+          {
+            projects.filter((el) => el.category == isActive).map((el,i) =>{
+              return(
+                <ProjectCard key={i} {...el} />
+              )
+            })
+          }
+        </CardContainer>
+      </Wrapper>
     </SECTION>
   );
 }
@@ -56,161 +73,107 @@ function Projects() {
 export default Projects;
 
 const SECTION = styled.section`
-  height: 1000px;
-  color: white;
-
-  h1 {
-    background-color: black;
-    padding: 30px 0px;
-    width: 300px;
-    margin: auto;
-    border-radius: 50px 0px 50px 0px;
-    border: solid white 3px;
-    color: #17e8eb;
-    font-size: 30px;
-  }
-
-  .box {
-    width: 100%;
-    height: 900px;
-    margin: auto;
-    /* background-color: #17e8eb;  */
-  }
-
-  .cont {
-    z-index: -100;
-    width: 100%;
-    height: 500px;
-    margin: auto;
-    background-color: white;
-    transition: transform 1s ease-in;
-    background-color: #161616;
-    /* background-color: #17e8eb; */
-    /* background-color: transparent; */
-    transform: translateY(-50%);
-  }
-
-  .box:hover .cont {
-    animation: top-to-bottom 5s ease-in forwards;
-  }
-
-  @keyframes top-to-bottom {
-    0% {
-      transform: translateY(-50%);
-    }
-    100% {
-      transform: translateY(50%);
-    }
-  }
-
-  h2 {
     color: white;
-    font-size: 55px;
-    background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-  }
+    /* background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%); */
+    background: linear-gradient(343.07deg, rgba(59, 186, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+`;
 
-  .animated2 {
-    color: #17e8eb;
-    margin-top: 100px;
-    height: 60px;
-    overflow: hidden;
-  }
-
-  .line {
-    text-align: center;
-    /* font-size: 20px; */
-    font-size: 50px;
-    text-transform: uppercase;
-    line-height: 60px;
-  }
-
-  .line:first-child {
-    animation: anim 12s infinite;
-  }
-
-  @keyframes anim {
-    0% {
-      margin-top: 0;
+const Wrapper = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1350px;
+    padding: 10px 0px 100px 0;
+    gap: 12px;
+    @media (max-width: 960px) {
+        flex-direction: column;
     }
-    16% {
-      margin-top: -60px;
-    }
-    33% {
-      margin-top: -120px;
-    }
-    50% {
-      margin-top: -180px;
-    }
-    66% {
-      margin-top: -120px;
-    }
-    82% {
-      margin-top: -60px;
-    }
-    100% {
-      margin-top: -380px;
-    }
-  }
+`;
 
-  .b1 {
-    margin: auto;
-    border-left: solid white 3px;
-    width: 0px;
-    height: 50px;
-  }
+const Title = styled.div`
+font-size: 42px;
+text-align: center;
+font-weight: 600;
+margin-top: 20px;
+background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  .b2 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    height: 50px;
-  }
-
-  .b3 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    height: 50px;
-  }
-
-  .b4 {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    height: 50px;
-  }
-
-  .c1 {
-    /* border-top: solid white 3px; */
-    /* border: solid white 3px; */
-  }
-
-  .c2 {
-    height: 50px;
-    border-top: solid white 3px;
-    border-left: solid white 3px;
-  }
-  .c3 {
-    height: 50px;
-    border-top: solid white 3px;
-    border-right: solid white 3px;
-  }
-
-  .c4 {
-    height: 50px;
-    border: solid white 3px;
-  }
-  .c5 {
-    height: 50px;
-    border: solid white 3px;
-  }
-
-  .c6 {
-    height: 50px;
-    border-right: solid white 3px;
-  }
-  .c7 {
-    height: 50px;
-    border-right: solid white 3px;
+  @media (max-width: 768px) {
+      margin-top: 12px;
+      font-size: 32px;
   }
 `;
+
+const Desc = styled.div`
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    background: linear-gradient(90deg, #cdc6c6 0%, #999393 63%, #959292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+`;
+
+const ToogleGroup = styled.div`
+  display: flex;
+  border: 1.5px solid #17e8eb;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 500px;
+  margin: 22px 0px;
+
+  @media (max-width: 768px){
+    font-size: 12px;
+  }
+  ;
+  `
+const ToogleButton = styled.div`
+  padding: 8px 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #cac3c3;
+
+  ${({ active }) => 
+    active && 
+    `background-color: #30303b;`
+  }
+
+
+  &:hover{
+    background-color: #282836 + 8;
+  }
+
+  @media (max-width: 768px){
+    padding: 6px 8px;
+    border-radius: 4px;
+  }
+`;
+
+const Divider = styled.div`
+  width: 1px;
+  background-color: #17e8eb;
+`
+
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+
+`
