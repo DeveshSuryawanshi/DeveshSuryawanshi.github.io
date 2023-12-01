@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c540a9a.css",
-    "main.js": "/static/js/main.8c6d82f1.js",
+    "main.js": "/static/js/main.50197f8d.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/programmer.png": "/static/media/programmer.77ccf91cf15cb682abcc.png",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
@@ -11,7 +11,6 @@
     "static/media/fitness-project.png": "/static/media/fitness-project.d387f0036abbb44ccc02.png",
     "static/media/MongoDB.png": "/static/media/MongoDB.6170bacefd8a1f69ca74.png",
     "static/media/netlify.png": "/static/media/netlify.d3689d1169ce706941a5.png",
-    "static/media/ContactLogo.png": "/static/media/ContactLogo.0586c5d023594f1e6fe7.png",
     "static/media/ReactCrudApp.png": "/static/media/ReactCrudApp.c32cada9d3cc921a68ba.png",
     "static/media/postman.png": "/static/media/postman.7fedeaff79947348538e.png",
     "static/media/3DModel.png": "/static/media/3DModel.d08f1d9ed36dc4740fa7.png",
@@ -37,11 +36,11 @@
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
     "main.0c540a9a.css.map": "/static/css/main.0c540a9a.css.map",
-    "main.8c6d82f1.js.map": "/static/js/main.8c6d82f1.js.map",
+    "main.50197f8d.js.map": "/static/js/main.50197f8d.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c540a9a.css",
-    "static/js/main.8c6d82f1.js"
+    "static/js/main.50197f8d.js"
   ]
 }
