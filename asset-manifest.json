@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3b7aa37.css",
-    "main.js": "/static/js/main.53b7a502.js",
+    "main.js": "/static/js/main.aef033e2.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/programmer.png": "/static/media/programmer.77ccf91cf15cb682abcc.png",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
@@ -20,6 +20,7 @@
     "static/media/Codegenius.png": "/static/media/Codegenius.be7a3ee5413422cc0838.png",
     "static/media/vscode.png": "/static/media/vscode.a61dc62c499ed3aeefdc.png",
     "static/media/linkdin.png": "/static/media/linkdin.656e19e3773750063a15.png",
+    "static/media/ApexChatter.png": "/static/media/ApexChatter.bb764b1a86011b4406dd.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.cb0fcc269e8250f3551b.png",
     "static/media/chakraui.png": "/static/media/chakraui.e7e0b39ee5137e44577f.png",
     "static/media/phone.png": "/static/media/phone.e33c13e2e8ac44d38681.png",
@@ -35,11 +36,11 @@
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
     "main.a3b7aa37.css.map": "/static/css/main.a3b7aa37.css.map",
-    "main.53b7a502.js.map": "/static/js/main.53b7a502.js.map",
+    "main.aef033e2.js.map": "/static/js/main.aef033e2.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3b7aa37.css",
-    "static/js/main.53b7a502.js"
+    "static/js/main.aef033e2.js"
   ]
 }
