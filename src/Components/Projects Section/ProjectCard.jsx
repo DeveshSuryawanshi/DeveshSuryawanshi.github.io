@@ -45,7 +45,7 @@ const ProjectCard = ({id,image,date,title,description,techstack,github,webapp,me
                 right: "20px",
                 cursor: "pointer",
               }}
-              fontSize={"20px"}
+              fontSize={"30px"}
               onClick={onClose}
             />
             <ModelImage src={image} />
@@ -390,12 +390,13 @@ const ModelButton = styled.a`
   padding: 12px 16px;
   border-radius: 8px;
   background-color: #17e8eb;
-  ${({ dull, theme }) =>
+  ${({ dull }) =>
     dull &&
     `
-        background-color: #1c1e27;
+    background-color: #1c1e27;
+    color: "#ffff";
         &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
+            background-color: #292b33;
         }
     `}
   cursor: pointer;

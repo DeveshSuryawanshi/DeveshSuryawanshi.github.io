@@ -31,6 +31,20 @@ li{
   margin: 0px 15px;
 }
 
+.li::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #17e8eb;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.li:hover::after {
+  transform: scale(1);
+}
 
 .container {
   display: flex;

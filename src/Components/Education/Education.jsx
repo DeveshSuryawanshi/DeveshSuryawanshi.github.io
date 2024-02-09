@@ -7,6 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaSchool } from "react-icons/fa";
+import { IoSchool } from "react-icons/io5";
 
 export const Education = () => {
   return (
@@ -20,7 +21,7 @@ export const Education = () => {
         {
             timeLineElements.map((el,i)=>{
                 return(
-                    <VerticalTimelineElement key={i} icon={<FaSchool />} iconStyle={{color : "#17e8eb", backgroundColor: "#3d3d4a"}}  contentStyle={{background: "linear-gradient(135deg,rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))", backdropFilter: "bulr(10px)", boxShadow: "0 8px 32px 0 rgba(0, 0, 0, 0.37)", border: "solid #17e8eb 0.5px"}} contentArrowStyle={{borderRight : "solid #17e8eb 10px"}}>
+                    <VerticalTimelineElement key={i} icon={el.logo} iconStyle={{color : "#17e8eb", backgroundColor: "#3d3d4a"}}  contentStyle={{background: "linear-gradient(135deg,rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))", backdropFilter: "bulr(10px)", boxShadow: "0 8px 32px 0 rgba(0, 0, 0, 0.37)", border: "solid #17e8eb 0.5px"}} contentArrowStyle={{borderRight : "solid #17e8eb 10px"}}>
                         <Wrapper>
                           <Name>{el.name}</Name>
                           <Title>{el.title}</Title>
@@ -89,9 +90,14 @@ const Title = styled.div`
 `
 
 const Date = styled.div`
-  font-size: 12px;
-  color: #17e8eb;
+width: max-content;
   margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #17e8eb;
+  background-color: #3d3d4a;
+  padding: 2px 8px;
+  border-radius: 10px;
 `
 
 const Grade = styled.div`

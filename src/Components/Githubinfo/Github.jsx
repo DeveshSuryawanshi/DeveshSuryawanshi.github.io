@@ -16,7 +16,8 @@ function Github() {
             alt="error"
           />
           <Image
-            src="https://github-readme-streak-stats.herokuapp.com?user=DeveshSuryawanshi&theme=neon"
+            // src="https://github-readme-streak-stats.herokuapp.com?user=DeveshSuryawanshi&theme=neon"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=DeveshSuryawanshi&theme=radical&hide_border=false"
             id="github-streak-stats"
             alt="error"
           />

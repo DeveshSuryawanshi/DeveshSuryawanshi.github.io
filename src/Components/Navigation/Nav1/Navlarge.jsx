@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import styles from "./Nav1.module.css";
 import resume from "../../Resume/Devesh-Suryawanshi-Resume.pdf";
-import { useState } from "react";
-import { useEffect } from "react";
-import { ThemMode } from "../../Them Section/ThemMode";
 import { SiGamedeveloper } from "react-icons/si";
 
 function Navlarge() {

@@ -4,11 +4,19 @@ import mail from "./Contact Images/mail.png";
 import phone from "./Contact Images/phone.png";
 import location from "./Contact Images/location.png";
 import github from "./Contact Images/github.png";
-import Contactlogo from "./Contact Images/ContactLogo.png";
 import instagram from "./Contact Images/insta.png";
 import styled from "styled-components";
+import { useState } from "react";
+import axios from "axios";
+import { useToast } from '@chakra-ui/react';
 
 function Contact() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const toast = useToast()
 
   const handlegithub = () => {
     window.open("https://github.com/DeveshSuryawanshi");
@@ -28,16 +36,54 @@ function Contact() {
     window.open("https://www.instagram.com/_devesh_suryawanshi_/")
   }
 
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+    let data = {
+      name,
+      email,
+      subject,
+      message
+    }
+    
+    axios.post("https://formspree.io/f/mbjevywg", data)
+      .then((res) =>{
+        toast({
+          title: 'Email Successfully Sent',
+          description: "I'll be in touch with you shortly",
+          status: 'success',
+          colorScheme : "",
+          position : "top",
+          containerStyle: {backgroundColor: "#17e8eb", borderRadius: "5px", color: "black"},
+          variant : "subtle",
+          duration: 9000,
+          isClosable: true,
+        })
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      })
+      .catch((error) =>{
+        toast({
+          title: 'Something Went Wrong',
+          status: 'error',
+          duration: 9000,
+          isClosable: true,
+        })
+      })
+  }
+
   return (
     <Container id="contact">
       <Heading>Contact Me</Heading>
       <FormContainer>
-        <Form method="POST" action="https://formspree.io/f/mbjevywg">
+        <Form method="POST" onSubmit={handleSubmit}>
           <FormHeading>Email Me</FormHeading>
-          <Input type="text" name="name" placeholder="Enter Your Name" required/>
-          <Input type="email" name="email" placeholder="Enter Your Email" required/>
-          <Input type="text" name="subject" placeholder="Subject" required/>
-          <TextArea name="message" placeholder="Message..." required rows={5}></TextArea>
+          <Input type="text" name="name" placeholder="Enter Your Name" required value={name} onChange={(e)=> setName(e.target.value)}/>
+          <Input type="email" name="email" placeholder="Enter Your Email" required value={email} onChange={(e)=> setEmail(e.target.value)}/>
+          <Input type="text" name="subject" placeholder="Subject" required value={subject} onChange={(e)=> setSubject(e.target.value)}/>
+          <TextArea name="message" placeholder="Message..." required value={message} rows={5} onChange={(e)=> setMessage(e.target.value)}></TextArea>
           <Submit type="submit" value={"Send"}/>
         </Form>
       </FormContainer>

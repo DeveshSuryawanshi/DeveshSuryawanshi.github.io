@@ -175,5 +175,4 @@ const CardContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 28px;
-
 `
