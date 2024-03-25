@@ -1,11 +1,11 @@
 import style from "./about.module.css";
 import image from "./boyimage/3DModel.png";
-import resume from "../Resume/Devesh-Suryawanshi-Resume.pdf";
+import resume from "../Resume/Devesh Suryawanshi-fw23_0110-Full Stack Web Developer.pdf";
 
 function About() {
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1Xky2XiA3FXerRDI0vuZ-VRo9oFWpR9nJ/view?usp=sharing",
+      "https://drive.google.com/file/d/16IlKLGs7fKtwGBgXWaSFz1Gm8UmDbom7/view?usp=sharing",
       "_blank"
     );
   };
@@ -14,7 +14,6 @@ function About() {
     <section
       id="about"
       class="about section"
-      // style={{ height: "600px", color: "white" }}
       className={style.AboutContainer}
     >
       <h1 className={style.header}>About Me</h1>
