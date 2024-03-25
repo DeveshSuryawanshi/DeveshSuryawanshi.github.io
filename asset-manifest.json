@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3b7aa37.css",
-    "main.js": "/static/js/main.2b117896.js",
+    "main.js": "/static/js/main.d8fedf24.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/programmer.png": "/static/media/programmer.77ccf91cf15cb682abcc.png",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
@@ -15,13 +15,18 @@
     "static/media/ReactCrudApp.png": "/static/media/ReactCrudApp.c32cada9d3cc921a68ba.png",
     "static/media/postman.png": "/static/media/postman.7fedeaff79947348538e.png",
     "static/media/3DModel.png": "/static/media/3DModel.d08f1d9ed36dc4740fa7.png",
+    "static/media/mui.png": "/static/media/mui.5955eca0663eaeb9b8d6.png",
+    "static/media/slack.png": "/static/media/slack.dd7e6b54aec7ebcb88d4.png",
     "static/media/vercel.png": "/static/media/vercel.07a394258a56a1ab9437.png",
+    "static/media/tailwind.png": "/static/media/tailwind.3549d9e451d7abb96934.png",
+    "static/media/laravel.png": "/static/media/laravel.2ebf4db3cc9f1b431979.png",
     "static/media/figma.png": "/static/media/figma.de9ddc6c2c43c542a17e.png",
     "static/media/Codegenius.png": "/static/media/Codegenius.be7a3ee5413422cc0838.png",
     "static/media/vscode.png": "/static/media/vscode.a61dc62c499ed3aeefdc.png",
     "static/media/linkdin.png": "/static/media/linkdin.656e19e3773750063a15.png",
     "static/media/ApexChatter.png": "/static/media/ApexChatter.bb764b1a86011b4406dd.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.cb0fcc269e8250f3551b.png",
+    "static/media/php.png": "/static/media/php.b59deec830f215d303b4.png",
     "static/media/chakraui.png": "/static/media/chakraui.e7e0b39ee5137e44577f.png",
     "static/media/phone.png": "/static/media/phone.e33c13e2e8ac44d38681.png",
     "static/media/redux.png": "/static/media/redux.b426d97de12d4dab1c06.png",
@@ -32,15 +37,16 @@
     "static/media/Premierpro.png": "/static/media/Premierpro.3a0824fc7814d482a19c.png",
     "static/media/Express.png": "/static/media/Express.39a0f4c3d981885c64f8.png",
     "static/media/CSS Logo.png": "/static/media/CSS Logo.495a79bfbc4ced7c7c0e.png",
+    "static/media/aws.png": "/static/media/aws.a59d5ca6b3b99d8d7b61.png",
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
     "main.a3b7aa37.css.map": "/static/css/main.a3b7aa37.css.map",
-    "main.2b117896.js.map": "/static/js/main.2b117896.js.map",
+    "main.d8fedf24.js.map": "/static/js/main.d8fedf24.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3b7aa37.css",
-    "static/js/main.2b117896.js"
+    "static/js/main.d8fedf24.js"
   ]
 }
