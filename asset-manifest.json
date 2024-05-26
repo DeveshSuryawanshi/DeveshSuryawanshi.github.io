@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3b7aa37.css",
-    "main.js": "/static/js/main.d8fedf24.js",
+    "main.js": "/static/js/main.b94759a5.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/programmer.png": "/static/media/programmer.77ccf91cf15cb682abcc.png",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
@@ -14,6 +14,7 @@
     "static/media/netlify.png": "/static/media/netlify.d3689d1169ce706941a5.png",
     "static/media/ReactCrudApp.png": "/static/media/ReactCrudApp.c32cada9d3cc921a68ba.png",
     "static/media/postman.png": "/static/media/postman.7fedeaff79947348538e.png",
+    "static/media/MySql.png": "/static/media/MySql.167c88550478e6f0f85c.png",
     "static/media/3DModel.png": "/static/media/3DModel.d08f1d9ed36dc4740fa7.png",
     "static/media/mui.png": "/static/media/mui.5955eca0663eaeb9b8d6.png",
     "static/media/slack.png": "/static/media/slack.dd7e6b54aec7ebcb88d4.png",
@@ -42,11 +43,11 @@
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
     "main.a3b7aa37.css.map": "/static/css/main.a3b7aa37.css.map",
-    "main.d8fedf24.js.map": "/static/js/main.d8fedf24.js.map",
+    "main.b94759a5.js.map": "/static/js/main.b94759a5.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3b7aa37.css",
-    "static/js/main.d8fedf24.js"
+    "static/js/main.b94759a5.js"
   ]
 }
