@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3b7aa37.css",
-    "main.js": "/static/js/main.8b8467f6.js",
+    "main.js": "/static/js/main.ea8f91a1.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/programmer.png": "/static/media/programmer.77ccf91cf15cb682abcc.png",
     "static/media/Estelle.png": "/static/media/Estelle.a96cc8b8809d2de9a4f9.png",
@@ -31,6 +31,7 @@
     "static/media/php.png": "/static/media/php.b59deec830f215d303b4.png",
     "static/media/chakraui.png": "/static/media/chakraui.e7e0b39ee5137e44577f.png",
     "static/media/phone.png": "/static/media/phone.e33c13e2e8ac44d38681.png",
+    "static/media/docker.png": "/static/media/docker.8ad0f8cf4ed8d5252fa4.png",
     "static/media/redux.png": "/static/media/redux.b426d97de12d4dab1c06.png",
     "static/media/insta.png": "/static/media/insta.459d14acdbfb7db227e0.png",
     "static/media/canva.webp": "/static/media/canva.8a168fb0442e2ce28ae1.webp",
@@ -44,11 +45,11 @@
     "static/media/javascript logo.png": "/static/media/javascript logo.3d09f2e45b9c5f40efb8.png",
     "index.html": "/index.html",
     "main.a3b7aa37.css.map": "/static/css/main.a3b7aa37.css.map",
-    "main.8b8467f6.js.map": "/static/js/main.8b8467f6.js.map",
+    "main.ea8f91a1.js.map": "/static/js/main.ea8f91a1.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3b7aa37.css",
-    "static/js/main.8b8467f6.js"
+    "static/js/main.ea8f91a1.js"
   ]
 }
